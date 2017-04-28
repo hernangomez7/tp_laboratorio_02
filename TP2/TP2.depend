@@ -10,3 +10,14 @@
 	"funciones.h"
 	<string.h>
 
+1493421745 source:c:\users\alumno\desktop\tp_laboratorio_02-master\tp2\funciones.c
+	"funciones.h"
+
+1493421860 c:\users\alumno\desktop\tp_laboratorio_02-master\tp2\funciones.h
+
+1493421992 source:c:\users\alumno\desktop\tp_laboratorio_02-master\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<string.h>
+

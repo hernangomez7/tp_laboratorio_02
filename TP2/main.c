@@ -7,7 +7,7 @@
 int main()
 {
     char seguir='s',opcion='0',aux,nombreaux[100];
-    int i,flag01=0,dniBorrar,c18=0,c19y35=0,c36=0,num,naux,restador,maximo;
+    int i,flag01=0,dniBorrar,c18=0,c19y35=0,c36=0,num,naux,maximo;
     EPersona gente[TAM]={0};
     cargarPersonas(gente,TAM);
     while(seguir=='s')
@@ -118,9 +118,10 @@ int main()
                 break;
             case '3':
                 system("cls");
-                printf("********************************************************\n");
+                printf("께께께께께께께께께께께께께께께께께께께께께께께께께께께\n");
                 printf("nombre\t\tedad\tDNI\t\testado\n");
-                printf("********************************************************\n");
+                printf("께께께께께께께께께께께께께께께께께께께께께께께께께께께\n");
+                MostpersOrde(gente,TAM,1);
                 for(i=0;i<TAM;i++)
                 {
                     if(gente[i].estado==1)
@@ -128,12 +129,12 @@ int main()
                         mostrarpersona(gente[i]);
                     }
                 }
-                printf("********************************************************\n");
+                printf("께께께께께께께께께께께께께께께께께께께께께께께께께께께\n");
                 break;
             case '4':
-                printf("********************************************************\n");
+                printf("께께께께께께께께께께께께께께께께께께께께께께께께께께께\n");
                 printf("-18\t19a35\t+35\n");
-                printf("********************************************************\n");
+                printf("께께께께께께께께께께께께께께께께께께께께께께께께께께께\n");
                  for(i=0;i<TAM;i++)
                  {
                      if(gente[i].edad<18)
@@ -169,8 +170,7 @@ int main()
                  {
                      maximo=c36;
                  }
-                   restador=(TAM-maximo);
-                 for(i=0;i<TAM-restador;i++)
+                 for(i=0;i<maximo;i++)
                  {
                     if(c18>0)
                     {
@@ -201,7 +201,7 @@ int main()
                     }
 
                  }
-                 printf("********************************************************\n");
+                 printf("께께께께께께께께께께께께께께께께께께께께께께께께께께께\n");
                 break;
             case '5':
                 seguir = 'n';

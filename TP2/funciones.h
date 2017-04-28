@@ -41,4 +41,13 @@ void mostrarpersona(EPersona);
 
 void cargarPersonas(EPersona[],int);
 
+/**
+ * ordena la lista por nombre
+ * @param lista el array se pasa como parametro.
+ * @param tamaño de lista.
+ * @param modo de  ordena alfabeticamente o alrevèz.
+ * @return (void)
+ */
+void MostpersOrde(EPersona[],int,int);
+
 #endif // FUNCIONES_H_INCLUDED

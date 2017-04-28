@@ -44,7 +44,6 @@ int obtenerEspacioLibre(EPersona gente[],int cant)
      }
     return indice;
 }
-
 int buscarPorDni(EPersona gente[], int numDNI)
 {
     int indic,flag0=0,i;
@@ -63,4 +62,40 @@ int buscarPorDni(EPersona gente[], int numDNI)
     }
     return indic;
 }
+void MostpersOrde(EPersona gente[],int cant,int modo)
+{
+    int i,j;
+    EPersona auxPersona;
+    if(modo==1)
+        {
+            for(i=0;i<cant-1;i++)
+            {
+                for(j=i+1;j<cant;j++)
+                {
+                    if(strcmp(gente[i].nombre,gente[j].nombre)>0)
+                    {
+                        auxPersona=gente[i];
+                        gente[i]=gente[j];
+                        gente[j]=auxPersona;
 
+                    }
+                }
+            }
+        }
+    if(modo==2)
+    {
+        for(i=0;i<cant-1;i++)
+        {
+            for(j=i+1;j<cant;j++)
+            {
+                if(strcmp(gente[i].nombre,gente[j].nombre)<0)
+                {
+                    auxPersona=gente[i];
+                    gente[i]=gente[j];
+                    gente[j]=auxPersona;
+
+                }
+            }
+        }
+    }
+}
